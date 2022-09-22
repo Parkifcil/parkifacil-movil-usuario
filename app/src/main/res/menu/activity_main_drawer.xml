@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:itemTextColor="@android:color/holo_orange_light"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <!--
+        <item
+            android:id="@+id/pagar_multa"
+            android:icon="@drawable/pagar_multa"
+            android:title="Pagar multa" />
+            -->
+
+        <item
+            android:id="@+id/vehiculos"
+            android:icon="@drawable/pagar_parquimetro"
+            android:title="Vehiculos" />
+
+        <item
+            android:id="@+id/historial"
+            android:icon="@drawable/historial"
+            android:title="Historial" />
+
+        <item
+            android:id="@+id/medios_pago"
+            android:icon="@drawable/medios_pago"
+            android:title="Saldo" />
+
+        <item
+            android:id="@+id/tarjeta"
+            android:icon="@drawable/medios_pago"
+            android:title="Tarjetas" />
+
+        <item
+            android:id="@+id/soporte"
+            android:icon="@drawable/soporte"
+            android:title="Soporte" />
+
+        <item
+            android:id="@+id/cambiar_contraseña"
+            android:icon="@drawable/password"
+            android:title="Cambiar contraseña" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Cerrar sesión" />
+
+
+    </group>
+    <!--
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+        -->
+
+</menu>

@@ -1,0 +1,82 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txtTitleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:gravity="left|center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/blanco"
+        android:textSize="16dp"
+        android:text="Realizar reintegro"
+        />
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="14dp"
+        android:text="Reintegro de saldo"
+        />
+
+    <TextView
+        android:id="@+id/txtHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="14dp"
+        android:text="Inicio:"
+        />
+
+    <TextView
+        android:id="@+id/txtHoraFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="14dp"
+        android:text="Fin:"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnCancelDialog"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent"
+            android:textAppearance="@android:style/TextAppearance.Widget.Button"
+            android:text="Cancelar"/>
+
+        <Button
+            android:id="@+id/btnAceptarDialog"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:textAppearance="@android:style/TextAppearance.Widget.Button"
+            android:text="Pagar"
+            android:enabled="true"/>
+    </LinearLayout>
+</LinearLayout>

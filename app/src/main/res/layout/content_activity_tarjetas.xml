@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        >
+
+        <Button
+            android:id="@+id/btnAgregarTarjeta"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_boton"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Agregar tarjeta"
+            android:textAllCaps="false"
+            android:textColor="@color/blanco"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listTarjetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#dadada"
+        />
+
+
+</LinearLayout>

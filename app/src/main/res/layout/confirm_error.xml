@@ -1,0 +1,57 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    >
+
+    <TextView
+        android:id="@+id/txtTitleDialogError"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:gravity="left|center"
+        android:background="#ea152b"
+        android:textColor="@color/blanco"
+        android:textSize="16dp"
+        android:text="Error"
+        />
+
+
+    <TextView
+        android:id="@+id/txtTitleError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="4dp"
+        android:textSize="14dp"
+        android:text="¿Error?"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnAceptarDialogError"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/rounded_boton_red"
+            android:textAppearance="@android:style/TextAppearance.Widget.Button"
+            android:text="Aceptar"
+            android:enabled="true"/>
+    </LinearLayout>
+</LinearLayout>

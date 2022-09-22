@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blanco"
+    android:paddingBottom="170dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grisAppBar"
+            android:text="Completa los dos campos para cambiar de contraseña"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:layout_marginVertical="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_input"
+                android:hint="Nueva contraseña"
+                android:inputType="textPassword|text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/searchBarHintColor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/rounded_input"
+                android:hint="Confirmar la contraseña"
+                android:inputType="textPassword|text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/searchBarHintColor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+
+            >
+
+            <Button
+                android:id="@+id/btnNewPass"
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:text="Cambiar contraseña"
+                android:background="@drawable/rounded_boton"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+                android:onClick="btnNewPass"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textSize="16dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app_mt="http://schemas.android.com/tools"
+    android:background="@color/blanco"
+    android:paddingBottom="170dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        app_mt:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grisAppBar"
+            android:text="Por favor introduce la dirección de  correo electrónico asociado"
+            android:textSize="16dp"
+            android:padding="25dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edtEmailRecupera"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_login"
+            android:paddingLeft="15dp"
+            android:layout_marginVertical="25dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/grisParkimovil"
+            android:hint="Correo electrónico"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grisAppBar"
+                android:text="No olvides revisar tu bandeja de correo no deseado, en caso de no encontrar nuestro mensaje"
+                android:textSize="12dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="90dp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:textSize="16dp"
+                android:text="Recuperar contraseña"
+                android:background="@drawable/rounded_boton"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+                android:layout_marginTop="-50dp"
+                android:onClick="btnRecuperaPassword"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/blanco"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDisponibilidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISPONIBILIDAD"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-5dp"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="-15dp"
+                android:padding="10dp"
+                android:src="@drawable/edit"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txtPlaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PLACA"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgDelet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-15dp"
+                android:padding="10dp"
+                android:src="@drawable/delete"/>
+
+            <LinearLayout
+                android:id="@+id/layoutInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio: "
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="2.5dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy-mm-dd hh:mm:ss"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fin: "
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtFin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy-mm-dd hh:mm:ss"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+
+                <Button
+                    android:id="@+id/btnExtenderTiempo"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="Extender"
+                    android:textSize="12dp"
+                    android:background="@drawable/rounded_login"
+                    android:textColor="@color/azulParkimovil"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnReintegrarSaldo"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_login"
+                    android:text="Reintegrar saldo"
+                    android:textColor="@color/azulParkimovil"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

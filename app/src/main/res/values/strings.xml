@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ParkiFácil</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Levantar multa</string>
+    <string name="google_maps_key">AIzaSyAaw299a4F-0yf0aMwPGpov5hpfH38ZXco</string>
+    <string name="title_activity_recupera_contrasena">Recuperar contraseña</string>
+    <string name="title_activity_informacion_vehiculo">Monitoreo</string>
+    <string name="title_activity_prueba">PruebaActivity</string>
+    <string name="title_activity_genera_multa">Generar multa</string>
+    <string name="my_text"><u>¿Olvidaste tu contraseña?</u>.</string>
+    <string name="my_regis"><u>Registrate ahora</u>.</string>
+    <string name="terminos"><u>terminos y condiciones</u>.</string>
+    <string name="title_activity_placas">PlacasActivity</string>
+    <string name="title_activity_new_placa">Nueva placa</string>
+    <string name="title_activity_login_">login_Activity</string>
+    <string name="title_activity_time">Pagar parquimetro</string>
+    <string name="title_activity_parqueo__actual_">Parqueo_Actual_Activity</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+    <string name="title_activity_historial_movimientos">activity_historial_movimientos</string>
+    <string name="title_activity_nuevo_usuario">NuevoUsuarioActivity</string>
+
+    <string-array name="lst_saldo">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="lst_zonas">
+        <item>Zona</item>
+    </string-array>
+
+
+</resources>

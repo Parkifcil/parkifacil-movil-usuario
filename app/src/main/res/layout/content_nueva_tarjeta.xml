@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco"
+            android:text="Ingrese los datos correspondientes de la tarjeta que desee añadir"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/txtNoTarjeta"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_input"
+            android:paddingLeft="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="Número de tarjeta"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/txtTitular"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_input"
+            android:paddingLeft="15dp"
+            android:hint="Nombre del titular"
+            android:inputType="text"
+            android:layout_marginVertical="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Fecha de vencimiento"
+            android:textSize="14dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="15dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            >
+
+            <EditText
+                android:id="@+id/txtMes"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_input"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:hint="MM"
+                android:maxLength="2"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/txtAnio"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_input"
+                android:hint="AA"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:maxLength="2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginVertical="15dp"
+            android:gravity="bottom|center"
+            >
+            <Button
+                android:id="@+id/btnNuevaTarjeta"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_boton"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:onClick="btnSavePlaca"
+                android:text="Añadir tarjeta"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

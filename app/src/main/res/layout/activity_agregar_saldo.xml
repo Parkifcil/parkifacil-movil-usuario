@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdgeLength="0dp"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@color/blanco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:padding="10dp"
+                android:text="Saldo"
+                android:textStyle="bold"
+                android:textColor="@color/azulParkimovil"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="$ 0.00"
+                android:textColor="@color/azulParkimovil"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azulParkimovil"
+            android:text="Seleccione Monto"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spnMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:dropDownSelector="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+            android:layout_marginHorizontal="40dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Subtotal:"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:textColor="@color/verdeParkimovil"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtSubtotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="$0.00 MXN"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="@color/negro"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+            android:layout_marginHorizontal="40dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="IVA:"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:textColor="@color/verdeParkimovil"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtIVA"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="$0.00 MXN"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="@color/negro"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+            android:layout_marginHorizontal="40dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Comisión:"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:textColor="@color/verdeParkimovil"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtComision"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="$0.00 MXN"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="@color/negro"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+            android:layout_marginHorizontal="40dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:textColor="@color/blanco"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="$0.00 MXN"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="@color/blanco"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="-5dp"
+            android:padding="10dp"
+            android:text="Seleccione el método de pago"
+            android:textColor="@color/azulParkimovil"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noHayTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azulParkimovil"
+            android:text="No tiene ninguna tarjeta asociada"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:layout_gravity="center"
+            android:paddingVertical="5dp"
+            android:layout_marginBottom="-7.5dp"
+            />
+        <parquimetro.mx.com.parkifacil.NonScrollListView
+            android:id="@+id/listTarjetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAgregarTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar tarjeta"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:paddingVertical="5dp"
+            android:onClick="txtLink"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:autoLink="all"
+            android:layout_marginBottom="15dp"
+            android:textColorLink="#4B90C8"
+            android:textColor="@color/azulParkimovil"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

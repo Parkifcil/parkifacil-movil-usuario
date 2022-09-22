@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0e5a97</color>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark">#0e5a97</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorAccent">#fff</color>
+    <color name="disable">#a02489dc</color>
+    <color name="horas">#7486ff</color>
+    <color name="minutos">#2489dc</color>
+    <color name="unreached">#d7d4d4</color>
+    <color name="btnmulta">#15b600</color>
+
+    <color name="colorAccent2">#FF4081</color>
+    <color name="errorTextLayout">#ff4043</color>
+    <color name="basico">#ff4043</color>
+    <color name="blanco">#fff</color>
+    <color name="negro">#000</color>
+    <color name="menu">#4b90c8</color>
+    <color name="transparente">#80000000</color>
+
+    <color name="verdeParkimovil">#6FBD73</color>
+    <color name="azulParkimovil">#66A8DC</color>
+    <color name="grisParkimovil">#C3C3C3</color>
+    <color name="grisAppBar">#909090</color>
+    <color name="grisNavBar">#C1C1C1</color>
+    <color name="blancoParkimovil">#f7f7f7</color>
+</resources>

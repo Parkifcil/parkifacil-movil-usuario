@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="parquimetro.mx.com.parkifacil">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_parkifacil_sinfondo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_parkifacil_sinfondo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".VehiculosActivity"
+            android:label="Mis vehículos"
+        />
+
+        <activity android:name=".ReciboMultaActivity" />
+
+        <receiver
+            android:name=".Notification"
+            android:enabled="true" />
+
+        <activity android:name=".ReciboSaldoActivity" />
+        <activity
+            android:name=".TarjetaActivity"
+            android:label="Mis tarjetas" />
+        <activity
+            android:name=".NuevaTarjetaActivity"
+            android:label="Nueva tarjeta" />
+        <activity android:name=".SoporteActivity" />
+        <activity android:name=".Terminos" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Pagar parquímetro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecuperaContrasenaActivity"
+            android:label="Recuperar contraseña" />
+        <activity
+            android:name=".PlacasActivity"
+            android:label="Mis vehículos"/>
+        <activity
+            android:name=".NewPlacaActivity"
+            android:label="@string/title_activity_new_placa" />
+        <activity
+            android:name=".TimeActivity"
+            android:label="@string/title_activity_time" />
+        <activity
+            android:name=".ParqueoActualActivity"
+            android:label="Estacionamiento actual" />
+        <activity
+            android:name=".HistorialActivity"
+            android:label="Historial de movimientos" />
+        <activity
+            android:name=".NuevoUsuarioActivity"
+            android:label="Alta nuevo usuario" />
+        <activity
+            android:name=".CambiarPassActivity"
+            android:label="Cambiar contraseña" />
+        <activity
+            android:name=".AgregarSaldoActivity"
+            android:label="Agregar saldo" />
+        <activity
+            android:name=".MultaActivity"
+            android:label="Pagar multa" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

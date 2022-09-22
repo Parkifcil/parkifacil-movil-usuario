@@ -1,0 +1,104 @@
+APARCAR
+-------------------
+
+https://localhost:5001/api/Movimientos/mtdMovAparcar
+
+{
+        "created_by": "Dulce Olivia",
+        "str_placa":"SKL-23-55",
+        "boolean_auto_recarga": false,
+        "flt_monto": 8,
+        "str_so": "IOS", 
+        "int_id_espacio":229 ,
+        "int_id_vehiculo_id": 1,
+        "intidconcesion_id" : 1,
+        "int_id_usuario_id" : "5a370960-de91-498b-a8f9-2f57157d4311",
+        "int_tiempo": 60,
+        "int_id_saldo_id": 1
+        
+
+}
+
+
+EXTENSION
+------------------
+{
+        "created_by": "Dulce Olivia",
+        "str_placa":"SKL-23-55",
+        "boolean_auto_recarga": false,
+        "flt_monto": 8,
+        "str_so": "IOS", 
+        "int_id_espacio":229 ,
+        "int_id_vehiculo_id": 1,
+        "intidconcesion_id" : 1,
+        "int_id_usuario_id" : "5a370960-de91-498b-a8f9-2f57157d4311",
+        "int_tiempo": 60,
+        "int_id_saldo_id": 1
+        
+
+}
+
+
+CANCELAR
+---------------------
+https://localhost:5001/api/Movimientos/mtdMovCancelar?intIdMovimiento=244
+
+{
+        "last_modified_by": "Dulce"
+}
+
+DESAPARCAR
+------------------------
+https://localhost:5001/api/Movimientos/mtdMovDesaparcar?intIdMovimiento=242
+
+
+{
+        "last_modified_by": "Dulce"
+     
+}
+
+
+RECARGAR SALDO
+-----------------------------
+https://localhost:5001/api/Saldos/mtdRecargarSaldo?id=1&fltMonto=100
+
+ {   
+    "created_by": "Dulce",
+    "created_date": "2020-02-04",
+    "last_modified_by": "Dul",
+    "last_modified_date": "2020-02-04",
+    "int_id_usuario_trans": "050e898e-b975-49e7-a3bf-e3aad801a3bc",
+    "str_forma_pago": "Efectivo",
+    "str_tipo_recarga": "Recarga",
+    "intidconcesion_id" : 1
+   
+}
+
+
+
+MULTAS-FUGA
+https://localhost:5001/api/Multas/mtdMultaFuga
+{
+	"id":6,
+    "last_modified_by": "Dulce",
+    "str_id_agente_id": "3",
+    "int_id_movimiento_id": "49",
+    "int_id_saldo_id": "1",
+    "intidconcesion_id" : 1,
+    "int_id_vehiculo_id": "1"
+  
+}
+
+
+
+
+MULTA-GARANTIZADA
+https://localhost:5001/api/Multas/mtdMultaGarantizada
+{
+	"id":6,
+    "last_modified_by": "Dulce",
+    "str_id_agente_id": "3",
+    "str_documento_garantia" : "LICENCIA DE CONDUCIR"
+}
+
+

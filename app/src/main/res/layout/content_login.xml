@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/idImg"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_parkifacil_sinfondo"
+        android:layout_marginBottom="45dp"
+        />
+
+
+    <!--  Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        app:hintEnabled="false"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtUser"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/grisParkimovil"
+            android:hint="Usuario o correo electrónico"
+            android:text=""
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_login"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--  Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:hintEnabled="false"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:hint="Contraseña"
+            android:text=""
+            android:textColor="@color/negro"
+            android:textColorHint="@color/grisParkimovil"
+            android:paddingLeft="15dp"
+            android:background="@drawable/rounded_login"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:buttonTint="@color/verdeParkimovil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuérdame"
+            android:textSize="16dp"
+            android:textColor="@color/verdeParkimovil"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:textSize="16dp"
+        android:background="@drawable/rounded_boton"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/blanco"
+        android:textAllCaps="false"
+        android:onClick="btnLoign"
+        android:gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/my_text"
+        android:onClick="txtLink"
+        android:selectAllOnFocus="false"
+        android:linksClickable="false"
+        android:autoLink="all"
+        android:textSize="16dp"
+        android:textColor="@color/verdeParkimovil"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="¿Aún no tienes cuenta? "
+            android:textColor="@color/verdeParkimovil"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="24dp"
+            android:autoLink="all"
+            android:gravity="center"
+            android:linksClickable="false"
+            android:onClick="txtnewUser"
+            android:selectAllOnFocus="false"
+            android:textSize="16dp"
+            android:text="@string/my_regis"
+            android:textColor="@color/verdeParkimovil"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

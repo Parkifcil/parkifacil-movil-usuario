@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/basico"
+    android:padding="30dp"
+    android:layout_marginTop="50dp"
+    tools:context=".GeneraMultaActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/auto"
+                />
+
+            <TextView
+                android:id="@+id/txtDateStart"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:text="Fecha: 06 Nov 2019 |  17:13"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/txtNoPlaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Placa: "
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <EditText
+                android:id="@+id/edtNoPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ingrese placa"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/txtUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo: "
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+
+
+            <EditText
+                android:id="@+id/edtUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ingrese ubicacion"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="15dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caracteristicas del vehículo: "
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <EditText
+                android:id="@+id/edtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ingrese descripción"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="15dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/txtMotivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo: "
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <EditText
+                android:id="@+id/edtMotivo"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="top"
+                android:hint="ingrese motivo"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="15dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/blanco"
+        app:cardCornerRadius="25dp"
+        android:onClick="btnEnviarMulta"
+        tools:ignore="OnClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Generar multa"
+                android:textStyle="bold"
+                android:textColor="@color/basico"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+</ScrollView>

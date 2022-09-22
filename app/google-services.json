@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "193412156691",
+    "firebase_url": "https://innovacluster-parquimetro.firebaseio.com",
+    "project_id": "innovacluster-parquimetro",
+    "storage_bucket": "innovacluster-parquimetro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193412156691:android:d98d13be17ebc302d7dee6",
+        "android_client_info": {
+          "package_name": "parquimetro.mx.com.parkifacil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193412156691-2252c86q8l15lo9fog04qfe4mhdlcahq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJmMN86ol0j59SKDpw5xNIIKTPdDcZcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193412156691-2252c86q8l15lo9fog04qfe4mhdlcahq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

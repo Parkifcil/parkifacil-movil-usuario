@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app_mt="http://schemas.android.com/tools"
+    android:background="@color/blanco"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app_mt:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_login"
+            android:hint="Ingresa nombre de usuario"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/grisParkimovil" />
+
+
+        <EditText
+            android:id="@+id/edtCorreoElectronico"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_login"
+            android:hint="Ingresa tu correo electrónico"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/negro"
+            android:textColorHint="@color/grisParkimovil" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_login"
+                android:hint="Ingrese la contraseña"
+                android:inputType="textPassword|text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/grisParkimovil" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <CheckBox
+                android:id="@+id/checkboxAcepto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:buttonTint="@color/verdeParkimovil"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="He leído y acepto los"
+                android:textColor="@color/verdeParkimovil"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtTerminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15px"
+                android:autoLink="all"
+                android:onClick="txtTerminos"
+                android:paddingHorizontal="5dp"
+                android:text="@string/terminos"
+                android:textColor="@color/verdeParkimovil"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <Button
+                android:id="@+id/btnNewUser"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50px"
+                android:background="@drawable/rounded_boton"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:onClick="btnNewUser"
+                android:text="Registrarse"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

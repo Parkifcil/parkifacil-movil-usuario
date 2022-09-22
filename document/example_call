@@ -1,0 +1,55 @@
+APARCAR
+-------------------
+https://localhost:5001/api/Movimientos/mtdMovAparcar
+{
+        "created_by": "Dulce Olivia",
+        "str_placa":"SKL-23-55",
+        "boolean_auto_recarga": false,
+        "flt_monto": 16,
+        "str_so": "IOS", 
+        "int_id_espacio":16 ,
+        "int_id_vehiculo_id": 1,
+        "intidconcesion_id" : 1,
+        "int_id_usuario_id" : "5a370960-de91-498b-a8f9-2f57157d4311",
+        "int_tiempo": 60,
+        "int_id_saldo_id": 1
+        
+
+}
+DESAPARCAR
+--------------------
+https://localhost:5001/api/Movimientos/mtdMovDesaparcar?intIdMovimiento=139
+{
+        "last_modified_by": "Dulce",
+        "int_id_espacio": 11
+}
+
+
+DESOCUPAR
+--------------------------
+https://localhost:5001/api/Movimientos/mtdMovDesocupar?intIdMovimiento=139
+
+{
+        "last_modified_by": "Dulce",
+        "int_id_espacio": 11
+}
+
+CANCELAR
+-----------------------------
+https://localhost:5001/api/Movimientos/mtdMovCancelar?intIdMovimiento=139
+
+{
+        "last_modified_by": "Dulce",
+        "int_id_espacio": 11
+}
+
+EXTENDER TIEMPO
+----------------
+https://localhost:5001/api/Movimientos/mtdMovExtenderTiempo?intIdMovimiento=139
+
+
+{
+        "last_modified_by": "Dulce",
+        "int_id_espacio": 11,
+        "int_tiempo" : 15,
+        "flt_monto" : "2.00"

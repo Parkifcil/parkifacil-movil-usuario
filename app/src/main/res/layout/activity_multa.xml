@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantallas"
+    tools:context=".MultaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Folio"
+                android:textColor="@color/blanco"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0003312564859"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="25dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referencia"
+                android:textColor="@color/blanco"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="49030516293121YJT"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concepto del pago"
+                android:textColor="@color/blanco"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multa vehicular por falta de pago"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="25dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Importe a pagar"
+                android:textColor="@color/blanco"
+
+                />
+
+            <TextView
+                android:id="@+id/txtMonto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00 MXN"
+                android:textColor="@color/errorTextLayout"
+                android:layout_marginBottom="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAVOR DE COMPLETAR LA INFORMACIÓN"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/blanco"
+                android:layout_marginBottom="15dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Seleccione el método de pago"
+                    android:textColor="@color/blanco"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noHayTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blanco"
+                android:text="No tiene ninguna tarjeta asociada"
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="center"
+                android:paddingVertical="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="-4dp"
+                />
+            <parquimetro.mx.com.parkifacil.NonScrollListView
+                android:id="@+id/listTarjetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAgregarTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar tarjeta"
+                android:textSize="16dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="center"
+                android:paddingVertical="5dp"
+                android:onClick="txtLink"
+                android:selectAllOnFocus="false"
+                android:linksClickable="false"
+                android:autoLink="all"
+                android:layout_marginBottom="15dp"
+                android:textColorLink="#4B90C8"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

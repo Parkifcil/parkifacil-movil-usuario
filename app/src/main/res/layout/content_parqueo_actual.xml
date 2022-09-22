@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:background="@color/blanco"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--     300-32-32 = 236   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingVertical="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Selecciona tiempo"
+                    android:textColor="@color/azulParkimovil" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingHorizontal="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:text="Saldo"
+                    android:textColor="@color/azulParkimovil" />
+
+                <TextView
+                    android:id="@+id/txtMonto"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingTop="2dp"
+                    android:text="$0.00 MX"
+                    android:textColor="@color/azulParkimovil"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center">
+
+                <io.feeeei.circleseekbar.CircleSeekBar
+                    android:id="@+id/seek_minute"
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    app:wheel_max_process="500"
+                    app:wheel_pointer_color="@color/blanco"
+                    app:wheel_pointer_radius="8dp"
+                    app:wheel_reached_color="@color/minutos"
+                    app:wheel_reached_width="22dp"
+                    app:wheel_unreached_color="@color/unreached"
+                    app:wheel_unreached_width="22dp"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/azulParkimovil"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <io.feeeei.circleseekbar.CircleSeekBar
+            android:id="@+id/seek_hour"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerInParent="true"
+            app:wheel_max_process="11"
+            app:wheel_pointer_color="@color/blanco"
+            app:wheel_pointer_radius="8dp"
+            app:wheel_reached_color="@color/minutos"
+            app:wheel_reached_width="20dp"
+            app:wheel_unreached_color="@color/unreached"
+            tools:ignore="UnknownId"
+            android:visibility="invisible"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lnldetalle2"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="265dp"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/layout1"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Estacionamiento:"
+                    android:gravity="right"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/txtEst"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00 MXN"
+                    android:gravity="left"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linearLayout2"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Comisión:"
+                    android:gravity="right"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/txtComision"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00 MXN"
+                    android:gravity="left"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linearLayout3"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:gravity="right"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00 MXN"
+                    android:gravity="left"
+                    android:textColor="@color/azulParkimovil"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="-10dp"
+            android:visibility="visible"
+            android:layout_below="@+id/lnldetalle3"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/azulParkimovil"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tu estacionamiento finalizará"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/blanco"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFinalizatime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dd/mm/yyyy hh:mm:ss"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:background="@color/blanco"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tu estacionamiento inicia"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/blanco"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFechActual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dd/mm/yyyy hh:mm:ss"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="20dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lnldetalle3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="350dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lnldetalle3"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="50dp"
+            tools:ignore="NotSibling">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/linearLayout5"
+            android:gravity="center"
+            >
+
+
+            <Button
+                android:id="@+id/btnAddPago"
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:text="Pagar $0.00 MXN"
+                android:background="@drawable/rounded_boton"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

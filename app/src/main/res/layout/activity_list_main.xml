@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app_mt="http://schemas.android.com/tools"
+    android:layout_marginTop="55dp"
+    android:background="@color/azulParkimovil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app_mt:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/spnCiudad"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:dropDownSelector="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spnZona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:dropDownSelector="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:app_mt="http://schemas.android.com/tools"
+            android:id="@+id/frg_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            map:mapType="normal"
+            map:uiCompass="true"
+            app_mt:context=".MapStartedActivity" />
+
+
+
+        <TextView
+            android:id="@+id/txtDireccion"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="195dp"
+            android:textColor="@color/blanco"
+            android:background="@drawable/rounded_text"
+            android:hint="Direccion..."
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnUbicacion"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:textSize="16dp"
+                android:background="@drawable/rounded_boton"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Pagar parquímetro"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLocationPinUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
